@@ -6,7 +6,7 @@ This script will keep running in the background, and keep checking the dweet pag
 
 <ol>
 <li>1.Run the script as</li>
-    ./dweet_puller.sh {dweet thing name}
+    ./dweet_puller.sh {dweet thing name}<br>
 The dweet thing name can be anything, so go wild! Just make sure someone isn't already using it because there's NO authentication, so you might bother someone else or vice versa. My 2 cents, use the most unikely name you can think of
 <li>Now open the dweet_pusher.html page in any web browser of your choice.</li>
 <li>Click the "Set Dweet Thing" button, and enter the dweet thing name in the prompt box.</li>
