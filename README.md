@@ -14,4 +14,4 @@ The dweet thing name can be anything, so go wild! Just make sure someone isn't a
 <li>Now enter all your commands in the boxes, they'll be executed in the order.</li>
 <li>Finally press the "Submit" button and you should be done.</li>
 </ol>
-Whenever the script will next check the dweet page, 
+Whenever the script will next check the dweet page, the commands will be written to a file line by line, and then executed
