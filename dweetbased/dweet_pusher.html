@@ -1,0 +1,29 @@
+<html>
+<button onclick="setthing()" id="button_dweet_thing">Set Dweet "Thing"</button>
+<button onclick="addbutton()">Add Command</button><br>
+<script type="text/javascript">
+	var thing;
+	var number = 0;
+	function setthing()
+	{
+		thing = prompt("Enter Dweet \"Thing\"");
+		var myform = document.getElementById("myform");
+		myform.action = "http://dweet.io/dweet/for/" + thing;
+		var button_dweet_thing = document.getElementById("button_dweet_thing");
+		button_dweet_thing.innerHTML = "Dweet thing set as " + thing + ". Click to reset";
+	}
+	
+	function addbutton()
+	{
+		var myform = document.getElementById("myform");
+		number += 1;
+		myform.innerHTML = myform.innerHTML + "Command" + number + "<input type=\"text\" name=\"Command" + number + "\"/><br>";
+	}
+</script>
+
+<form method="GET" id="myform">
+	<input type="submit" value="Submit"/><br>
+	Command0<input type="text" name="command0"/><br>
+</form>
+
+</html>
